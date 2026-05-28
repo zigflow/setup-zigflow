@@ -5,11 +5,12 @@ header:
     copyright-year: 2025 - 2026
   paths-ignore:
     - "**/dist"
+    - dist/**/*
     - "**/tmp"
     - LICENSE
     - "**/.*"
     - "**/go.*"
-    - "**/*.{json,md,yml,yaml}"
+    - "**/*.{json,md,yml,yaml,map}"
     - "**/.gitkeep"
   comment: on-failure
 

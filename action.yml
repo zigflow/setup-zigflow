@@ -1,0 +1,13 @@
+name: Setup Zigflow
+description: Setup Zigflow on GitHub Actions runners
+inputs:
+  version:
+    description: Version of Zigflow to install (eg. 'v0.12.0' or 'latest')
+    required: false
+    default: latest
+branding:
+  icon: git-merge
+  color: purple
+runs:
+  using: node24
+  main: ./dist/index.mjs

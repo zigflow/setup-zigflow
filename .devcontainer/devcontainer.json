@@ -1,8 +1,7 @@
 {
   "image": "ghcr.io/mrsimonemms/devcontainers/full",
   "name": "devcontainer",
-  "features": {
-  },
+  "features": {},
   "customizations": {
     "vscode": {
       "extensions": [

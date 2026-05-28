@@ -4,15 +4,22 @@
   "description": "Set up your GitHub Actions workflow with a specific version of Zigflow",
   "author": "Zigflow authors <https://github.com/zigflow/setup-zigflow/graphs/contributors>",
   "private": true,
+  "main": "./dist/index.mjs",
   "license": "Apache-2.0",
   "scripts": {
+    "build": "ncc build src/index.mjs -o dist --license LICENSE",
     "format": "prettier --write \"**/*.?(c|m){j,t}s\"",
     "lint": "eslint \"**/*.?(c|m)js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "@actions/github": "^9.1.1",
+    "@actions/tool-cache": "^4.0.0"
+  },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@vercel/ncc": "^0.38.4",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-prettier": "^5.1.3",
