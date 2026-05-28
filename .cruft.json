@@ -1,0 +1,19 @@
+{
+  "template": "https://github.com/mrsimonemms/new",
+  "commit": "6f1459d0cc97b9a3e0fa01a996a7af83fefe02aa",
+  "checkout": "main",
+  "context": {
+    "cookiecutter": {
+      "project_name": "setup-zigflow",
+      "description": "Set up your GitHub Actions workflow with a specific version of Zigflow",
+      "author": "Zigflow authors <https://github.com/zigflow/setup-zigflow/graphs/contributors>",
+      "type": "blank",
+      "_template": "https://github.com/mrsimonemms/new",
+      "_commit": "6f1459d0cc97b9a3e0fa01a996a7af83fefe02aa"
+    }
+  },
+  "directory": "js",
+  "skip": [
+    ".git"
+  ]
+}
